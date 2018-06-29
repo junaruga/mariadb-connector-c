@@ -3246,6 +3246,7 @@ mysql_options(MYSQL *mysql,enum mysql_option option, const void *arg)
 int STDCALL
 mysql_options4(MYSQL *mysql,enum mysql_option option, const void *arg1, const void *arg2)
 {
+  printf("[DEBUG] mariadb_lib.c mysql_options4 arg1: %s, arg2: %s\n", arg1, arg2);
   return mysql_optionsv(mysql, option, arg1, arg2);
 }
 /****************************************************************************
